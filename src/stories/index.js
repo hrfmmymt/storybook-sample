@@ -1,6 +1,7 @@
 import React from 'react'
 import { storiesOf, action, linkTo } from '@kadira/storybook'
 import Button from './Button'
+import Color from './Color'
 import Heading from './Heading'
 import Modal from './Modal'
 import Welcome from './Welcome'
@@ -13,6 +14,14 @@ storiesOf('Welcome', module)
 storiesOf('Heading', module)
   .add('heading', () => (
     <Heading>Hello, World!</Heading>
+  ))
+
+storiesOf('Color', module)
+  .add('theme color', () => (
+    <Color onClick={action('color-clicked')}>Hello, World!</Color>
+  ))
+  .add('key color', () => (
+    <Color onClick={action('clicked')}>Hello, World!</Color>
   ))
 
 storiesOf('Button', module)
