@@ -15,15 +15,25 @@ const styles = StyleSheet.create({
     border: 'none',
     backgroundColor: '#1ba1ff',
     padding: '1em'
+  },
+  accent: {
+    backgroundColor: '#1c5db5',
+    color: '#000',
+    fontSize: '16px',
+    border: 'none',
+    padding: '1em',
+  },
+  accentNotice: {
+    backgroundColor: '#ffc11c',
+    color: '#000',
+    fontSize: '16px',
+    border: 'none',
+    padding: '1em',
   }
 })
 
 const accent = {
-  color: '#000',
-  fontSize: '16px',
-  border: 'none',
   backgroundColor: '#1c5db5',
-  padding: '1em'
 }
 
 const Color = ({ children, onClick }) => (
@@ -32,7 +42,11 @@ const Color = ({ children, onClick }) => (
 
     <div className={css(styles.base)} onClick={onClick}>Base Color</div>
     <div className={css(styles.main)} onClick={onClick}>Main Color</div>
-    <div style={accent} onClick={onClick}>Accent Color {accent.backgroundColor}</div>
+    <div className={css(styles.accent)} onClick={onClick}>Accent Color {accent.backgroundColor}</div>
+    <div className={css(styles.accentNotice)} onClick={onClick}>Accent Color {accent.backgroundColor}</div>
+
+    <textarea value={css(styles.base)}></textarea>
+
   </div>
 )
 

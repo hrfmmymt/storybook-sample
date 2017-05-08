@@ -12,19 +12,19 @@ storiesOf('Welcome', module)
     <Welcome showApp={linkTo('Button')}/>
   ))
 
-  storiesOf('Font', module)
-    .add('font', () => (
-      <Font>
-        <p>あのイーハトーヴォのすきとおった風、</p>
-        <p>夏でも底に冷たさをもつ青いそら、</p>
-        <p>うつくしい森で飾られたモーリオ市、</p>
-        <p>郊外のぎらぎらひかる草の波。</p>
-        <p>祇辻飴葛蛸鯖鰯噌庖箸</p>
-        <p>ABCDEFGHIJKLM</p>
-        <p>abcdefghijklm</p>
-        <p>1234567890</p>
-      </Font>
-    ))
+storiesOf('Font', module)
+  .add('font', () => (
+    <Font>
+      <p>あのイーハトーヴォのすきとおった風、</p>
+      <p>夏でも底に冷たさをもつ青いそら、</p>
+      <p>うつくしい森で飾られたモーリオ市、</p>
+      <p>郊外のぎらぎらひかる草の波。</p>
+      <p>祇辻飴葛蛸鯖鰯噌庖箸</p>
+      <p>ABCDEFGHIJKLM</p>
+      <p>abcdefghijklm</p>
+      <p>1234567890</p>
+    </Font>
+  ))
 
 storiesOf('Heading', module)
   .add('heading', () => (
@@ -41,8 +41,9 @@ storiesOf('Color', module)
 
 storiesOf('Button', module)
   .add('with text', () => (
-    <Button onClick={action('clicked')}>Hello Button</Button>
+    <Button onClick={ action('button-click') }>Hello Button</Button>
   ))
+
   .add('with some emoji', () => (
     <Button onClick={action('clicked')}>😀 😎 👍 💯</Button>
   ))
