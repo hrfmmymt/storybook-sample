@@ -20,6 +20,18 @@ const styles = StyleSheet.create({
   accentNotice: {
     backgroundColor: '#ffc11c',
   },
+  backGround: {
+    backgroundColor: '#f7f7f8'
+  },
+  backGroundBlue: {
+    backgroundColor: '#ddf1ff'
+  },
+  similar: {
+    backgroundColor: '#47b3ff'
+  },
+  red: {
+    backgroundColor: '#fc2c46'
+  }
 })
 
 Object.keys(styles).forEach(key => {
@@ -35,9 +47,10 @@ const Color = ({ children, onClick }) => (
     <div className={css(styles.common, styles.main)} onClick={onClick}>Main Color {styles.main._definition.backgroundColor}</div>
     <div className={css(styles.common, styles.accent)} onClick={onClick}>Accent Color {styles.accent._definition.backgroundColor}</div>
     <div className={css(styles.common, styles.accentNotice)} onClick={onClick}>Accent Color {styles.accentNotice._definition.backgroundColor}</div>
-
-    <textarea value={css(styles.base)}></textarea>
-
+    <div className={css(styles.common, styles.backGround)} onClick={onClick}>Background Color {styles.backGround._definition.backgroundColor}</div>
+    <div className={css(styles.common, styles.backGroundBlue)} onClick={onClick}>Background Color {styles.backGroundBlue._definition.backgroundColor}</div>
+    <div className={css(styles.common, styles.similar)} onClick={onClick}>Background Color {styles.similar._definition.backgroundColor}</div>
+    <div className={css(styles.common, styles.red)} onClick={onClick}>Background Color {styles.red._definition.backgroundColor}</div>
   </div>
 )
 

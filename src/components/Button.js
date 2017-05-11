@@ -3,8 +3,10 @@ import { StyleSheet, css } from 'aphrodite'
 
 const styles = StyleSheet.create({
   button: {
+    boxSizing: 'border-box',
     color: '#000',
-    fontSize: '16px',
+    fontSize: '1em',
+    padding: '1em',
     border: 'none',
     borderRadius: '2px',
     backgroundColor: '#ffc11c',

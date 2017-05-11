@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@kadira/storybook-addon-notes": "^1.0.1",
     "aphrodite": "^1.2.0",
     "boron": "^0.2.3",
     "react": "^15.5.4",

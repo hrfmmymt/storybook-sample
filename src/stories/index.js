@@ -1,5 +1,6 @@
 import React from 'react'
 import { storiesOf, action, linkTo } from '@kadira/storybook'
+import { WithNotes } from '@kadira/storybook-addon-notes'
 import Button from './Button'
 import Color from './Color'
 import Font from './Font'
@@ -35,9 +36,6 @@ storiesOf('Color', module)
   .add('theme color', () => (
     <Color onClick={action('color-clicked')}>Hello, World!</Color>
   ))
-  .add('key color', () => (
-    <Color onClick={action('clicked')}>Hello, World!</Color>
-  ))
 
 storiesOf('Button', module)
   .add('with text', () => (
@@ -45,7 +43,9 @@ storiesOf('Button', module)
   ))
 
   .add('with some emoji', () => (
-    <Button onClick={action('clicked')}>😀 😎 👍 💯</Button>
+    <WithNotes notes={'Here we use some emoji as the Button text. Isn\'t it look nice?'}>
+      <Button onClick={action('clicked')}>😀 😎 👍 💯</Button>
+    </WithNotes>
   ))
 
 storiesOf('Modal', module)
