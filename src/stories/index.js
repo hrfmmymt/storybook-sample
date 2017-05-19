@@ -5,6 +5,7 @@ import Button from './Button'
 import Color from './Color'
 import Font from './Font'
 import Heading from './Heading'
+import Links from './Links'
 import Modal from './Modal'
 import Welcome from './Welcome'
 
@@ -46,6 +47,11 @@ storiesOf('Button', module)
     <WithNotes notes={'Here we use some emoji as the Button text. Isn\'t it look nice?'}>
       <Button onClick={action('clicked')}>😀 😎 👍 💯</Button>
     </WithNotes>
+  ))
+
+storiesOf('Links', module)
+  .add('links', () => (
+    <Links onClick={action('color-clicked')}>Hello, World!</Links>
   ))
 
 storiesOf('Modal', module)
