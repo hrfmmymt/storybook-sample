@@ -3,7 +3,8 @@ import { storiesOf, action, linkTo } from '@kadira/storybook'
 import { WithNotes } from '@kadira/storybook-addon-notes'
 import Button from './Button'
 import Color from './Color'
-import Font from './Font'
+import FontRegular from './FontRegular'
+import FontBold from './FontBold'
 import Heading from './Heading'
 import Links from './Links'
 import Modal from './Modal'
@@ -15,8 +16,8 @@ storiesOf('Welcome', module)
   ))
 
 storiesOf('Font', module)
-  .add('font', () => (
-    <Font>
+  .add('regular', () => (
+    <FontRegular>
       <p>あのイーハトーヴォのすきとおった風、</p>
       <p>夏でも底に冷たさをもつ青いそら、</p>
       <p>うつくしい森で飾られたモーリオ市、</p>
@@ -25,7 +26,20 @@ storiesOf('Font', module)
       <p>ABCDEFGHIJKLM</p>
       <p>abcdefghijklm</p>
       <p>1234567890</p>
-    </Font>
+    </FontRegular>
+  ))
+
+  .add('bold', () => (
+    <FontBold>
+      <p>あのイーハトーヴォのすきとおった風、</p>
+      <p>夏でも底に冷たさをもつ青いそら、</p>
+      <p>うつくしい森で飾られたモーリオ市、</p>
+      <p>郊外のぎらぎらひかる草の波。</p>
+      <p>祇辻飴葛蛸鯖鰯噌庖箸</p>
+      <p>ABCDEFGHIJKLM</p>
+      <p>abcdefghijklm</p>
+      <p>1234567890</p>
+    </FontBold>
   ))
 
 storiesOf('Heading', module)

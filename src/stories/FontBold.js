@@ -1,9 +1,9 @@
 import React from 'react'
-import Font from '../components/Font'
+import FontBold from '../components/FontBold'
 
 const FontStory = ({children}) => (
   <div style={{margin: '30px'}}>
-    <Font children={children} />
+    <FontBold children={children} />
   </div>
 )
 
